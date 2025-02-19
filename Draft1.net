@@ -1,0 +1,15 @@
+* C:\Users\Guilherme Xavier\Documents\GitHub\Retificadores\Draft1.asc
+V1 N001 0 SINE(0 180 60)
+V2 N003 0 SINE(0 180 60 0 0 -120)
+V3 N004 0 SINE(0 180 60 0 0 120)
+D1 N001 N002 D
+D2 N003 N002 D
+D3 N004 N002 D
+L1 N002 N005 1H
+R1 N005 0 100
+C1 N002 0 1000µ
+.model D D
+.lib C:\Users\Guilherme Xavier\AppData\Local\LTspice\lib\cmp\standard.dio
+.tran 1
+.backanno
+.end
